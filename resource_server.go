@@ -5,7 +5,7 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 )
 
-//data source example_server: must not implement Create, Update or Delete
+//data source: must not implement Create, Update or Delete
 func dataServer() *schema.Resource {
 	return &schema.Resource{
 		Read: resourceServerRead,
